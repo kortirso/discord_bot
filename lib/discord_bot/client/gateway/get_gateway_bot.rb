@@ -1,6 +1,6 @@
 module DiscordBot
   class Client
-    # Channel module
+    # Gateway module
     module Gateway
       # Gateway module
       module GetGatewayBot

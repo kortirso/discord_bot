@@ -2,7 +2,7 @@ module DiscordBot
   class Client
     # Channel module
     module Channels
-      # Message module
+      # CreateMessage module
       module CreateMessage
         # Create message to channel
         def create_channel_message(channel_id:, content:)

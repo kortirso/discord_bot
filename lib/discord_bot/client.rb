@@ -6,6 +6,7 @@ require_relative 'client/channels/create_message'
 require_relative 'client/channels/create_webhook'
 require_relative 'client/webhooks/execute'
 require_relative 'client/users/create_channel'
+require_relative 'client/users/me'
 require_relative 'client/gateway/get_gateway'
 require_relative 'client/gateway/get_gateway_bot'
 
@@ -20,6 +21,7 @@ module DiscordBot
     include DiscordBot::Client::Channels::CreateWebhook
     include DiscordBot::Client::Webhooks::Execute
     include DiscordBot::Client::Users::CreateChannel
+    include DiscordBot::Client::Users::Me
     include DiscordBot::Client::Gateway::GetGateway
     include DiscordBot::Client::Gateway::GetGatewayBot
 

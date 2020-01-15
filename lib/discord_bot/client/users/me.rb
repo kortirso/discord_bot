@@ -1,15 +1,15 @@
 module DiscordBot
   class Client
-    # Guild module
-    module Guilds
-      # Channels module
-      module Channels
-        # Get guild channels list
-        def get_guild_channels(guild_id:)
+    # Users module
+    module Users
+      # Get user info module
+      module Me
+        # Returns user
+        def me
           # define params for request
           headers = { 'Content-Type' => 'application/json', 'Authorization' => "Bot #{bot_token}", 'User-Agent' => user_agent }
           # make request
-          self.class.get("/guilds/#{guild_id}/channels", query: {}, headers: headers).parsed_response
+          self.class.get('/users/@me', query: {}, headers: headers).parsed_response
         end
       end
     end

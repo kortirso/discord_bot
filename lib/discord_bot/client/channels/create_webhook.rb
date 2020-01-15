@@ -2,7 +2,7 @@ module DiscordBot
   class Client
     # Channel module
     module Channels
-      # Message module
+      # CreateWebhook module
       module CreateWebhook
         # Create webhook to channel
         def create_channel_webhook(channel_id:, name:)

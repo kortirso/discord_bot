@@ -2,7 +2,7 @@ module DiscordBot
   class Client
     # Channel module
     module Channels
-      # Message module
+      # Get channel module
       module Channel
         # Get channel
         def get_channel(channel_id:)

@@ -1,8 +1,8 @@
 module DiscordBot
   class Client
-    # Channel module
+    # Users module
     module Users
-      # Message module
+      # Create channel module
       module CreateChannel
         # Create message to channel
         def create_user_channel(recipient_id:)
